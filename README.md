@@ -4,7 +4,7 @@ It detecs voice activity using WebRTC, obtained from [py-webrtcvad](https://gith
 
 To record the mic, the [sounddevice](https://python-sounddevice.readthedocs.io/en/0.5.1/) module is used
 
-The requirements for running the file are installing those two module + numpy:
+The requirements for running the file are installing those two modules + numpy:
 ```
 pip install sounddevice webrtcvad numpy
 ```
