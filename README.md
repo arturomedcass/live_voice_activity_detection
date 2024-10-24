@@ -8,3 +8,8 @@ The requirements for running the file are installing those two module + numpy:
 ```
 pip install sounddevice webrtcvad numpy
 ```
+
+Simply download the file and run it: 
+```
+python simple_vad.py
+```
