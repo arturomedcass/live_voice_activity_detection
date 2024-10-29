@@ -1,6 +1,7 @@
 import webrtcvad
 import sounddevice as sd
 import numpy as np
+import time
 
 # Parameters
 sampling_rate = 16000  # Hertz
@@ -35,4 +36,8 @@ with sd.InputStream(samplerate=sampling_rate,
                      dtype=np.int16,
                      callback=audio_callback):
     print("Listening... Press Ctrl+C to stop")
-    sd.sleep(-1)  # Listen indefinitely until interrupted
+    try:
+        while True:
+            time.sleep(0.1)  # Sleep for a short duration
+    except KeyboardInterrupt:
+        print("Stopped")
